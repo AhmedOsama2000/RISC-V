@@ -5,10 +5,10 @@ module Forward_Unit #(
 	// INPUT
 	input  wire 				   EX_MEM_Reg_Wr,
 	input  wire 				   MEM_WB_Reg_Wr,
-	input  wire [WIDTH_SOURCE-1:0] ID_EX_Rs1,
-	input  wire [WIDTH_SOURCE-1:0] ID_EX_Rs2,
-	input  wire [WIDTH_SOURCE-1:0] EX_MEM_Rd,
-	input  wire [WIDTH_SOURCE-1:0] MEM_WB_Rd,
+	input  wire [WIDTH_SOURCE-1:0] 		   ID_EX_Rs1,
+	input  wire [WIDTH_SOURCE-1:0] 		   ID_EX_Rs2,
+	input  wire [WIDTH_SOURCE-1:0] 		   EX_MEM_Rd,
+	input  wire [WIDTH_SOURCE-1:0] 	   	   MEM_WB_Rd,
 
 	// OUTPUT
 	output reg [1:0] 			   Forward_A,
