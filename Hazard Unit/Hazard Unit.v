@@ -8,7 +8,7 @@ module Hazard_Unit #(
 	input  wire [WIDTH_SOURCE-1:0] IF_ID_rs2,
 	input  wire [OPCODE_6_4-1:0]   opcode,
 	input  wire [WIDTH_SOURCE-1:0] ID_EX_Reg_rd,
-	input  wire 				   ID_EX_MEM_Rd, // Memory Read
+	input  wire 		       ID_EX_MEM_Rd, // Memory Read
 
 	// OUTPUT
 	output reg PC_Stall,
@@ -25,7 +25,7 @@ assign expc_haz_2 = ((IF_ID_rs2 == ID_EX_Reg_rd) && ID_EX_MEM_Rd)? 1'b1:1'b0;
 
 always @(*) begin
 
-	PC_Stall 	  = 0;
+	PC_Stall      = 0;
 	IF_ID_Stall   = 0;
 	Mux_Sel_Flush = 0;
 
@@ -55,7 +55,7 @@ always @(*) begin
 	end
 	else begin
 		
-		PC_Stall 	  = 0;
+		PC_Stall      = 0;
 		IF_ID_Stall   = 0;
 		Mux_Sel_Flush = 0;
 
