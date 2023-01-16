@@ -3,7 +3,7 @@ module Shift_Unit_tb;
 	parameter XLEN   = 32;
 
 	reg [XLEN-1:0]   Src1;
-	reg [XLEN-1:0]   Src2;
+	reg [5:0]   	 Src2;
 	reg  			 funct3_2; 
 	reg              funct7_5;
 	reg              En;
