@@ -4,7 +4,7 @@ module Shift_Unit #(
 (
 	// INPUT
 	input  wire signed [XLEN-1:0] Src1,
-	input  wire  	   [XLEN-1:0] Src2,
+	input  wire  	   [5:0]      Src2,
 	input  wire  			 	  funct3_2, 
 	input  wire              	  funct7_5,
 	input  wire              	  En,
