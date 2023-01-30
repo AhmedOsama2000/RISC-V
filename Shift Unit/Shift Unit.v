@@ -3,11 +3,11 @@ module Shift_Unit #(
 )
 (
 	// INPUT
-	input  wire signed [XLEN-1:0] Src1,
-	input  wire  	   [4:0] 	  Src2,
-	input  wire  			 	  funct3_2, 
-	input  wire              	  funct7_5,
-	input  wire              	  En,
+	input  wire signed [XLEN-1:0] Rs1,
+	input  wire  	   [4:0]      Rs2,
+	input  wire  		      funct3_2, 
+	input  wire                   funct7_5,
+	input  wire                   En,
 
 	// OUTPUT
 	output reg         [XLEN-1:0] Result
@@ -18,7 +18,7 @@ wire           sign_bit;
 
 integer i;
 
-assign sign_bit = (funct7_5)? Src1[XLEN-1]:1'b0;
+assign sign_bit = (funct7_5)? Rs1[XLEN-1]:1'b0;
 
 always @(*) begin
 
@@ -28,21 +28,21 @@ always @(*) begin
 			
 			for (i = 0;i < XLEN;i = i + 1) begin
 				
-				temp_result[XLEN-i-1] = Src1[i];
+				temp_result[XLEN-i-1] = Rs1[i];
 
 			end
 
 		end
 		else begin
 			
-			temp_result = Src1;
+			temp_result = Rs1;
 
 		end
-		temp_result = (Src2[0])? {{sign_bit},temp_result[XLEN-1:1]}:temp_result;
-		temp_result = (Src2[1])? {{2{sign_bit}},temp_result[XLEN-1:2]}:temp_result;
-		temp_result = (Src2[2])? {{4{sign_bit}},temp_result[XLEN-1:4]}:temp_result;
-		temp_result = (Src2[3])? {{8{sign_bit}},temp_result[XLEN-1:8]}:temp_result;
-		temp_result = (Src2[4])? {{16{sign_bit}},temp_result[XLEN-1:16]}:temp_result;
+		temp_result = (Rs2[0])? {{sign_bit},temp_result[XLEN-1:1]}:temp_result;
+		temp_result = (Rs2[1])? {{2{sign_bit}},temp_result[XLEN-1:2]}:temp_result;
+		temp_result = (Rs2[2])? {{4{sign_bit}},temp_result[XLEN-1:4]}:temp_result;
+		temp_result = (Rs2[3])? {{8{sign_bit}},temp_result[XLEN-1:8]}:temp_result;
+		temp_result = (Rs2[4])? {{16{sign_bit}},temp_result[XLEN-1:16]}:temp_result;
 		if (!funct3_2) begin
 			
 			for (i = 0;i < XLEN;i = i + 1) begin
