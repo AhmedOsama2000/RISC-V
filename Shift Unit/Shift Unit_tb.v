@@ -2,21 +2,21 @@ module Shift_Unit_tb;
 
 	parameter XLEN   = 32;
 
-	reg signed [XLEN-1:0]   Src1;
-	reg [5:0]   	 Src2;
-	reg  			 funct3_2; 
-	reg              funct7_5;
-	reg              En;
+	reg signed [XLEN-1:0] Rs1;
+	reg [5:0]   	      Rs2;
+	reg  		      funct3_2; 
+	reg                   funct7_5;
+	reg                   En;
 
-	wire [XLEN-1:0]  Result;
+	wire [XLEN-1:0]       Result;
 
 
 	wire [1:0] funct_test;
 	reg [XLEN-1:0] expected_result;
 
 	Shift_Unit DUT (
-		.Src1(Src1),
-		.Src2(Src2),
+		.Rs1(Rs1),
+		.Rs2(Rs2),
 		.funct3_2(funct3_2),
 		.funct7_5(funct7_5),
 		.En(En),
@@ -32,8 +32,8 @@ module Shift_Unit_tb;
 
 	initial begin
 
-		Src1     = 0;
-		Src2     = 0;
+		Rs1     = 0;
+		Rs2     = 0;
 		funct3_2 = 0;
 		funct7_5 = 0;
 		En       = 0;
@@ -41,46 +41,46 @@ module Shift_Unit_tb;
 		// SLL
 		#5
 		En   = 1;
-		Src1 = 50;
-		Src2 = 4;
-		check_result(Src1,Src2);
+		Rs1 = 50;
+		Rs2 = 4;
+		check_result(Rs1,Rs2);
 
 		// SRL
 		#5
 		funct3_2 = 1;
-		Src1 	 = 32'hABCDFFFF;
-		Src2 	 = 5;
-		check_result(Src1,Src2);
+		Rs1 	 = 32'hABCDFFFF;
+		Rs2 	 = 5;
+		check_result(Rs1,Rs2);
 
 		// SRA
 		#5
 		funct7_5 = 1;
-		Src1 	 = 32'hABCDFFFF;
-		Src2 	 = 3;
-		check_result(Src1,Src2);
+		Rs1 	 = 32'hABCDFFFF;
+		Rs2 	 = 3;
+		check_result(Rs1,Rs2);
 		#5
 
-		for (i = 0;i < 10;i = i + 1) begin
+		for (i = 0;i < 20;i = i + 1) begin
 			
-			Src1 	 = $random;
-			Src2 	 = $random;
+			Rs1 	 = $random;
+			Rs2 	 = $random;
 			funct3_2 = $random;
 			funct7_5 = $random;
 			#5
-			check_result(Src1,Src2);
+			check_result(Rs1,Rs2);
 		end
 
 		$stop;
 
 	end
 
-	task check_result(input signed [XLEN-1:0] Src1 ,input [4:0] Src2);
+	task check_result(input signed [XLEN-1:0] Rs1 ,input [4:0] Rs2);
 		begin
 			#2
 			case (funct_test)
-				SLL: expected_result = Src1 << Src2;
-				SRL: expected_result = Src1 >> Src2;
-				SRA: expected_result = Src1 >>> Src2;
+				SLL: expected_result = Rs1 << Rs2;
+				SRL: expected_result = Rs1 >> Rs2;
+				SRA: expected_result = Rs1 >>> Rs2;
 				default: expected_result = 'b0;
 			endcase
 			if (expected_result === Result) begin
