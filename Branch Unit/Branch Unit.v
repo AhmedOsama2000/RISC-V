@@ -12,7 +12,7 @@ module Branch_Unit #(
 	input  wire   		  En, 
 
 	// OUTPUT
-	output reg 	          Branch_taken
+	output reg 		  Branch_taken
 );
 
 localparam BEQ  = 3'b000;
@@ -59,7 +59,7 @@ always @(*) begin
 				end
 			end
 			BGEU: begin
-				Branch_taken = ( (Rs1 > Rs2) || !ALU_Res)? 1'b1:1'b0;
+				Branch_taken = ( !(Rs1 < Rs2) || !ALU_Res)? 1'b1:1'b0;
 			end
 			default: Branch_taken = 1'b0;
 
