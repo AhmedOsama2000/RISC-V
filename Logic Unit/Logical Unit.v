@@ -4,8 +4,8 @@ module Logical_Unit #(
 )
 (
 	// INPUT
-	input  wire [XLEN-1:0]   Src1,
-	input  wire [XLEN-1:0]   Src2,
+	input  wire [XLEN-1:0]   Rs1,
+	input  wire [XLEN-1:0]   Rs2,
 	input  wire [FUNCT3-1:0] funct3_1_0,
 	input  wire 			 En, 
 
@@ -21,11 +21,11 @@ always @(*) begin
 	
 	if (En) begin
 		case (funct3_1_0)
-			AND    : Result = Src1 & Src2;
+			AND    : Result = Rs1 & Rs2;
 			
-			OR     : Result = Src1 | Src2;
+			OR     : Result = Rs1 | Rs2;
 
-			XOR    : Result = Src1 ^ Src2;
+			XOR    : Result = Rs1 ^ Rs2;
 
 			default: Result = 'b0;
 		endcase
