@@ -4,14 +4,15 @@ module Branch_Unit #(
 )
 (
 	// INPUT
+	// Reuse the Subtraction of Main ALU
 	input  wire  [XLEN-1:0]   ALU_Res,
 	input  wire  [FUNCT3-1:0] funct3,
 	input  wire  [XLEN-1:0]   Rs1,
 	input  wire  [XLEN-1:0]   Rs2,
-	input  wire   			  En, 
+	input  wire   		  En, 
 
 	// OUTPUT
-	output reg 				  Branch_taken
+	output reg 	          Branch_taken
 );
 
 localparam BEQ  = 3'b000;
