@@ -2,8 +2,8 @@ module CLA_Adder_tb;
 
 	parameter WIDTH = 4;
 
-	reg  signed [WIDTH-1:0] rs_1;
-	reg  signed [WIDTH-1:0] rs_2;
+	reg  signed [WIDTH-1:0] Rs1;
+	reg  signed [WIDTH-1:0] Rs2;
 	reg              En;
 	reg              funct7_5;
 	wire [WIDTH-1:0] result;
@@ -13,8 +13,8 @@ module CLA_Adder_tb;
 	integer i;
 
 	CLA_ADD_SUB DUT (
-		.rs_1(rs_1),
-		.rs_2(rs_2),
+		.Rs1(Rs1),
+		.Rs2(Rs2),
 		.En(En),
 		.funct7_5(funct7_5),
 		.result(result),
@@ -22,14 +22,15 @@ module CLA_Adder_tb;
 	);
 
 	initial begin
+		
 		En = 1'b1;
 
 		for (i = 0;i < 50;i = i + 1) begin
-			rs_1 = $random;
-			rs_2 = $random;
+			Rs1 = $random;
+			Rs2 = $random;
 			funct7_5  = $random;
 			#5
-			check_sum(rs_1,rs_2);	
+			check_sum(Rs1,Rs2);	
 		end
 		#5
 
@@ -37,15 +38,17 @@ module CLA_Adder_tb;
 		#5
 
 		$stop;
+
 	end
 
 	task check_sum (input [WIDTH-1:0] src_1,input [WIDTH-1:0] src_2);
 		begin
+			
 			if (funct7_5) begin
-				check_res = rs_1 - rs_2;
+				check_res = Rs1 - Rs2;
 			end
 			else begin
-				check_res = rs_1 + rs_2;
+				check_res = Rs1 + Rs2;
 			end
 
 			if (check_res == result) begin
@@ -54,6 +57,7 @@ module CLA_Adder_tb;
 			else begin
 				$display("%0t Incorrect check_res = %0d != {overflow,result} == %0d",$time,check_res,{overflow,result});
 			end
+
 		end
 	endtask
 
