@@ -1,12 +1,12 @@
 module CLA_ADD_SUB
 #(
-  	parameter WIDTH = 32
+  	parameter WIDTH = 4
 )
 (
 	input  wire [WIDTH-1:0] rs_1,
 	input  wire [WIDTH-1:0] rs_2,
 	input  wire             En,
-	input  wire             SUB,
+	input  wire             funct7_5,
 	output wire [WIDTH-1:0] result,
 	output wire             overflow
 );
@@ -17,7 +17,7 @@ wire [WIDTH-1:0] Pg;
 wire [WIDTH-1:0] Sum;
 wire [WIDTH-1:0] passed_rs2; 
 
-assign passed_rs2 = (SUB && En)? ~rs_2:rs_2;
+assign passed_rs2 = (funct7_5 && En)? ~rs_2:rs_2;
 
 // Create the Full Adders
 genvar full_adder_gen;
@@ -48,10 +48,9 @@ generate
 	 end
 endgenerate
    
-
   // Carry Depend on ADD/SUB Operation
-  assign Carry[0] = SUB;
+  assign Carry[0] = funct7_5;
  
-  assign {overflow,result} = {Carry[WIDTH]^SUB,Sum};
+  assign {overflow,result} = {Carry[WIDTH] ^ Carry[WIDTH-1],Sum};
  
 endmodule
