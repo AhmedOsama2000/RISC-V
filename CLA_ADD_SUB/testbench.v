@@ -1,6 +1,6 @@
 module CLA_Adder_tb;
 
-	parameter WIDTH = 4;
+	parameter WIDTH = 32;
 
 	reg  signed [WIDTH-1:0] Rs1;
 	reg  signed [WIDTH-1:0] Rs2;
