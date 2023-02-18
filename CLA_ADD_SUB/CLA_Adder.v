@@ -1,6 +1,6 @@
 module CLA_ADD_SUB
 #(
-  	parameter WIDTH = 4
+  	parameter WIDTH = 32
 )
 (
 	input  wire [WIDTH-1:0] Rs1,
