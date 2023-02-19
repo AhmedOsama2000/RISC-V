@@ -2,8 +2,8 @@ module CLA_Adder_tb;
 
 	parameter WIDTH = 32;
 
-	reg  signed [WIDTH-1:0] Rs1;
-	reg  signed [WIDTH-1:0] Rs2;
+	reg [WIDTH-1:0] Rs1;
+	reg [WIDTH-1:0] Rs2;
 	reg              En;
 	reg              funct7_5;
 	wire [WIDTH-1:0] result;
@@ -41,14 +41,14 @@ module CLA_Adder_tb;
 
 	end
 
-	task check_sum (input [WIDTH-1:0] src_1,input [WIDTH-1:0] src_2);
+	task check_sum (input signed [WIDTH-1:0]  src_1,input signed [WIDTH-1:0] src_2);
 		begin
 			
 			if (funct7_5) begin
-				check_res = Rs1 - Rs2;
+				check_res = src_1 - src_2;
 			end
 			else begin
-				check_res = Rs1 + Rs2;
+				check_res = src_1 + src_2;
 			end
 
 			if (check_res == result) begin
