@@ -2,10 +2,10 @@ module half_adder(
 	input	a,
 	input	b,
 	output	sum,
-	output	cout
+	output	carry
 	);
 
 	assign sum	 = a^b;
-	assign cout = a&b;
+	assign carry = a&b;
 
 endmodule
