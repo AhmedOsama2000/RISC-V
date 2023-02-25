@@ -6,10 +6,10 @@ module Division_BLOCK #(
 	//inputs
 	input  wire               CLK,
 	input  wire               rst_n,
-    input  wire [XLEN - 1:0]  dividend,
-    input  wire [XLEN - 1:0]  divisor,
-    input  wire               data_valid,
-    input  wire [1:0]         operation,
+        input  wire [XLEN - 1:0]  dividend,
+   	input  wire [XLEN - 1:0]  divisor,
+    	input  wire               data_valid,
+   	input  wire [1:0]         operation,
 
 	//outputs    
 	output                    divided_by_zero,
