@@ -1,7 +1,7 @@
 module Division_BLOCK_tb () ;
 
-parameter XLEN_tb 		  = 32 ;
-parameter COUNT_WIDTH_tb = $clog2(XLEN_tb) ;
+parameter  XLEN_tb = 32 ;
+parameter  COUNT_WIDTH_tb = $clog2(XLEN_tb) ;
 localparam DIV   = 2'b00;
 localparam DIVU  = 2'b01;
 localparam REM   = 2'b10;
@@ -10,10 +10,10 @@ localparam REMU  = 2'b11;
 	//inputs
 	reg              CLK_tb ;
 	reg               rst_n_tb ;
-    reg [XLEN_tb - 1:0]  dividend_tb ;
-    reg [XLEN_tb - 1:0]  divisor_tb ;
-    reg               data_valid_tb ;
-    reg [1:0]         operation_tb ; 
+    	reg [XLEN_tb - 1:0]  dividend_tb ;
+    	reg [XLEN_tb - 1:0]  divisor_tb ;
+    	reg               data_valid_tb ;
+    	reg [1:0]         operation_tb ; 
 
 	//outputs    
 	
