@@ -13,7 +13,7 @@ module Division_Unit #(
 	//outputs    
 	output reg  [XLEN - 1:0]  quotient,
 	output reg  [XLEN - 1:0]  remainder,
-	
+	output                    divided_by_zero,
 	output reg                data_ready
 );
 
@@ -35,8 +35,9 @@ reg [XLEN:0] 		  accumulator;
 reg [XLEN-1:0] 		  divisor_reg;
 
 reg                   Q_LSB;
+reg                   flag_zero ;
 
-
+assign divided_by_zero = (flag_zero & (!divisor)) ? 1'b1 : 1'b0 ;
 
 
 // Next State Logic
@@ -56,7 +57,7 @@ always @(*) begin
 	
 	case (CS)
 		IDLE: begin
-			if (data_valid) begin
+			if (data_valid & (divisor != 'b0)) begin
 				NS = DIVIDE;
 			end
 			else begin
@@ -85,9 +86,16 @@ always @(posedge CLK) begin
 		IDLE: begin
 			counter    <= 'b0;
 			data_ready <= 1'b0;
+			
 			if (data_valid) begin
-				{accumulator_reg,dividend_Q} <= {33'b0,dividend};
-				divisor_reg 				 <= divisor; 
+					if(!divisor) begin
+						flag_zero <= 1'b1 ;
+						data_ready <= 1'b1 ;	
+					end else begin
+				 		{accumulator_reg,dividend_Q} <= {33'b0,dividend};
+						divisor_reg 				 <= divisor;
+						flag_zero                    <= 1'b0 ;		
+					end
 			end
 		end
 		DIVIDE: begin
