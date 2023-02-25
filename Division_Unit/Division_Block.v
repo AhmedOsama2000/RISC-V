@@ -12,7 +12,7 @@ module Division_BLOCK #(
     input  wire [1:0]         operation,
 
 	//outputs    
-	
+	output                    divided_by_zero,
 	output reg  [XLEN - 1:0]  product_o,
 	output wire               data_ready
 );
@@ -54,6 +54,7 @@ assign converation_enable =  is_sign_operation & ((sign_divisor & !sign_dividend
 	//outputs    
 	.quotient(quotient_temp),
 	.remainder(remainder_temp),
+	.divided_by_zero(divided_by_zero),
 	.data_ready(data_ready)
 );
 
