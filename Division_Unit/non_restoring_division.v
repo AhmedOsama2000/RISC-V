@@ -6,14 +6,14 @@ module Division_Unit #(
 	//inputs
 	input  wire               CLK,
 	input  wire               rst_n,
-    input  wire [XLEN - 1:0]  dividend,
-    input  wire [XLEN - 1:0]  divisor,
-    input  wire               data_valid,
+    	input  wire [XLEN - 1:0]  dividend,
+    	input  wire [XLEN - 1:0]  divisor,
+    	input  wire               data_valid,
 
 	//outputs    
 	output reg  [XLEN - 1:0]  quotient,
 	output reg  [XLEN - 1:0]  remainder,
-	output                    divided_by_zero,
+	output wire               divided_by_zero,
 	output reg                data_ready
 );
 
@@ -34,8 +34,8 @@ reg [XLEN:0] 		  accumulator;
 
 reg [XLEN-1:0] 		  divisor_reg;
 
-reg                   Q_LSB;
-reg                   flag_zero ;
+reg                  	  Q_LSB;
+reg                       flag_zero ;
 
 assign divided_by_zero = (flag_zero & (!divisor)) ? 1'b1 : 1'b0 ;
 
@@ -92,20 +92,20 @@ always @(posedge CLK) begin
 						flag_zero <= 1'b1 ;
 						data_ready <= 1'b1 ;	
 					end else begin
-				 		{accumulator_reg,dividend_Q} <= {33'b0,dividend};
-						divisor_reg 				 <= divisor;
-						flag_zero                    <= 1'b0 ;		
+						{accumulator_reg,dividend_Q} <=    {33'b0,dividend};
+						divisor_reg 		     <=             divisor;
+						flag_zero                    <=               1'b0 ;		
 					end
 			end
 		end
 		DIVIDE: begin
 			{accumulator_reg,dividend_Q} <= {accumulator,dividend_temp[XLEN-1:1],Q_LSB};
-			counter    					 <= counter + 1;
+			 counter <= counter + 1;
 		end
 		CORRECT: begin
 			quotient   <= dividend_Q;
 			remainder  <= accumulator;
-			data_ready <= 1;
+			data_ready <= 1'b1;
 		end
 	endcase
 end
