@@ -47,9 +47,9 @@ assign converation_enable =  is_sign_operation & ((sign_divisor & !sign_dividend
 	//inputs
 	.CLK(CLK),
 	.rst_n(rst_n),
-    .dividend(dividend_div),
-    .divisor(divisor_div),
-    .data_valid(data_valid),
+        .dividend(dividend_div),
+        .divisor(divisor_div),
+        .data_valid(data_valid),
 
 	//outputs    
 	.quotient(quotient_temp),
@@ -71,8 +71,8 @@ always @(*) begin
                 REM, REMU: product_o =  remainder; 
 
                 default : begin
-							product_o = 'b0 ;
-						  end
+				product_o = 'b0 ;
+			  end
       endcase
         
 end
