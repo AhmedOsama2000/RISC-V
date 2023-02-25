@@ -18,6 +18,7 @@ localparam REMU  = 2'b11;
 	//outputs    
 	
 	wire  [XLEN_tb - 1:0]  product_o_tb ;
+	wire                  divided_by_zero_tb ;
 	wire              data_ready_tb ;
 
 	// Clock Generator // 
@@ -238,6 +239,26 @@ initial
 			@(negedge CLK_tb)
 			data_valid_tb = 1'b0 ;
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////			    test cases of divide by zero                   ///////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		repeat(35)@(negedge CLK_tb) ;
+			data_valid_tb = 1'b1 ;
+			dividend_tb = 'd5;
+			divisor_tb = 'd0;
+			operation_tb = REMU ;
+			@(negedge CLK_tb)
+			data_valid_tb = 1'b0 ;
+
+
+			repeat(35)@(negedge CLK_tb) ;
+			data_valid_tb = 1'b1 ;
+			dividend_tb = 'd149;
+			divisor_tb = -'d2;
+			operation_tb = REM ;
+			@(negedge CLK_tb)
+			data_valid_tb = 1'b0 ;
 
 	#500 
 	$stop;
@@ -261,6 +282,7 @@ initial
 		.operation(operation_tb),
 	//outputs    
 		.product_o(product_o_tb),
+		.divided_by_zero(divided_by_zero_tb),
 		.data_ready(data_ready_tb) 
 		
 
