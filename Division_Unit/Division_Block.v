@@ -12,7 +12,7 @@ module Division_BLOCK #(
    	input  wire [1:0]         operation,
 
 	//outputs    
-	output                    divided_by_zero,
+	output wire               divided_by_zero,
 	output reg  [XLEN - 1:0]  product_o,
 	output wire               data_ready
 );
