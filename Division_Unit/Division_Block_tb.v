@@ -8,18 +8,18 @@ localparam REM   = 2'b10;
 localparam REMU  = 2'b11;
 
 	//inputs
-	reg              CLK_tb ;
-	reg               rst_n_tb ;
+	reg                  CLK_tb ;
+	reg                  rst_n_tb ;
     	reg [XLEN_tb - 1:0]  dividend_tb ;
     	reg [XLEN_tb - 1:0]  divisor_tb ;
-    	reg               data_valid_tb ;
-    	reg [1:0]         operation_tb ; 
+    	reg                  data_valid_tb ;
+	reg [1:0]            operation_tb ; 
 
 	//outputs    
 	
 	wire  [XLEN_tb - 1:0]  product_o_tb ;
-	wire                  divided_by_zero_tb ;
-	wire              data_ready_tb ;
+	wire                   divided_by_zero_tb ;
+	wire                   data_ready_tb ;
 
 	// Clock Generator // 
 		
