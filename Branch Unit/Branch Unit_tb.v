@@ -27,7 +27,6 @@ module Branch_Unit_tb;
 	Branch_Unit DUT (
 		.Rs1(Rs1),
 		.Rs2(Rs2),
-		.ALU_Res(Expected_res),
 		.funct3(funct3),
 		.En(En),
 		.Branch_taken(Branch_taken)
