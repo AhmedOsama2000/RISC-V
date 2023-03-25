@@ -18,27 +18,27 @@ parameter LRU_Width = 2
 (
 
 // input
-input		wire																		CLK ,
-input		wire																		RST ,
-input		wire																		Write_ready_MEM ,		
-input		wire																		RD_Valid_MEM ,		
-input		wire																		RD_EN_MEM ,		
-input		wire																		WR_Byte_CPU ,		
-input		wire																		WR_HWORD_CPU ,
-input		wire																		WR_EN ,		
-input		wire																		RD_EN ,		
+input		wire							CLK ,
+input		wire							RST ,
+input		wire							Write_ready_MEM ,		
+input		wire							RD_Valid_MEM ,		
+input		wire							RD_EN_MEM ,		
+input		wire							WR_Byte_CPU ,		
+input		wire							WR_HWORD_CPU ,
+input		wire							WR_EN ,		
+input		wire							RD_EN ,		
 input		wire	[Width_Data*NUMBER_WORD-1:0]			Data_RD_MEM ,		
-input		wire	[Width_Data-1:0]									Data_ADD ,		
-input		wire	[Width_Data-1:0]									Data_Wr ,		
+input		wire	[Width_Data-1:0]				Data_ADD ,		
+input		wire	[Width_Data-1:0]				Data_Wr ,		
 
 // output
-output	reg		[Width_ADD-1:0]										Write_ADD_MEM ,		
-output	reg		[Width_Data-1:0]									Write_Data_MEM ,		
-output	reg		[Width_Data-1:0]									O_Data ,		
-output	reg		[`OFFSET]													B_OFFSET , // send to cache control to select byte
-output	reg																			RD_WAIT ,  // send to cache control to WAIT RD_Hit
-output	reg																			RD_Hit ,
-output	reg																			WR_Hit 
+output	reg		[Width_ADD-1:0]					Write_ADD_MEM ,		
+output	reg		[Width_Data-1:0]				Write_Data_MEM ,		
+output	reg		[Width_Data-1:0]				O_Data ,		
+output	reg		[`OFFSET]					B_OFFSET , // send to cache control to select byte
+output	reg								RD_WAIT ,  // send to cache control to WAIT RD_Hit
+output	reg								RD_Hit ,
+output	reg								WR_Hit 
 						
 );
 
@@ -71,29 +71,29 @@ reg		[LRU_Width-1:0]	LRU_3 [Size_Block-1:0] ;
 reg		[LRU_Width-1:0]	LRU_4 [Size_Block-1:0] ;
 
 // READ FORM CONTROL
-reg																	temp_RD_EN ;
-reg																	temp_WR_EN ;
+reg						temp_RD_EN ;
+reg						temp_WR_EN ;
 
 // THIS SIGNAL FOR READ FORM MEMORY IF NOT HIT IN CACHE
-reg																	RD_InValidate ;
+reg						RD_InValidate ;
 
 // WRITE DATA TEMPORARY SAVE SELECT BYTE OR HALF WORD FORM CONTROL UNIT
-reg																	temp_WR_Byte_CPU ;
-reg																	temp_WR_HWORD_CPU ;
+reg						temp_WR_Byte_CPU ;
+reg						temp_WR_HWORD_CPU ;
 
 
 // SAVE DATA COMING FORM CACHE
-reg		[Width_Data-1:0]  						temp_Data_ADD ;
-reg		[Width_Data-1:0]  						temp_Data_Wr ;
+reg		[Width_Data-1:0]  		temp_Data_ADD ;
+reg		[Width_Data-1:0]  		temp_Data_Wr ;
 
 // missing 
-wire 																miss_1 ;	
-wire 																miss_2 ;	
-wire 																miss_3 ;	
-wire 																miss_4 ;	
+wire 						miss_1 ;	
+wire 						miss_2 ;	
+wire 						miss_3 ;	
+wire 						miss_4 ;	
 
 // FLAG READ DONE
-reg		[1:0]													RD_DN ;
+reg		[1:0]				RD_DN ;
 
 /*******************************************************************
  Initializations
