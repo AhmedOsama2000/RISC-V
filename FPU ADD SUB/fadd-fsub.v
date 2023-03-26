@@ -1,15 +1,15 @@
 `define MANTISSA 22:0		// position of MANTISSA in DATA
 `define EXPONANT 30:23		// position of MANTISSA in DATA
-`define SIGN 31		// position of MANTISSA in DATA
+`define SIGN 31			// position of MANTISSA in DATA
 
 
 
 module fadd_fsub #(parameter XLEN = 32) (
 	input	wire	[XLEN-1 : 0] frs1,
 	input	wire	[XLEN-1 : 0] frs2,
-	input	wire		     En,
-	input	wire		     rst_n,
-	input	wire		     Funct,		// 0 for add - 1 for sub
+	input	wire				 En,
+	input	wire				 rst_n,
+	input	wire				 Funct,		// 0 for add - 1 for sub
 	output	reg 	[XLEN-1 : 0] frd
 	);
 
@@ -70,7 +70,7 @@ always @(*) begin
 					{A_is_Bigger,operand_a,operand_b} = {1'b1,frs2,frs1} ;
 				end
 			end
-			
+
 			else if (frs1[`EXPONANT] < frs2[`EXPONANT]) begin
 				{A_is_Bigger,operand_a,operand_b} = {1'b1,frs2,frs1} ;
 			end	
@@ -91,45 +91,45 @@ always @(*) begin
 
 			if (frs2[29:23]) begin
 				if (frs1[`MANTISSA] > frs2[`MANTISSA]) begin
-					{A_is_Bigger,operand_a,operand_b} = {1'b0,frs1,frs2} ;
+					{operand_a,operand_b} = {frs1,frs2} ;
 				end
 				else begin
-					{A_is_Bigger,operand_a,operand_b} = {1'b1,frs2,frs1} ;
+					{operand_a,operand_b} = {frs2,frs1} ;
 				end
 			end
 
 			else begin
-				{A_is_Bigger,operand_a,operand_b} = {1'b1,frs2,frs1} ;
+				{operand_a,operand_b} = {frs2,frs1} ;
 			end
 
 		end
 
 		else if (frs1[`EXPONANT] == frs2[`EXPONANT]) begin
 			if (frs1[`MANTISSA] > frs2[`MANTISSA]) begin
-				{A_is_Bigger,operand_a,operand_b} = {1'b0,frs1,frs2} ;
+				{operand_a,operand_b} = {frs1,frs2} ;
 			end
 			else begin
-				{A_is_Bigger,operand_a,operand_b} = {1'b1,frs2,frs1} ;
+				{operand_a,operand_b} = {frs2,frs1} ;
 			end
 		end
 
 		else begin
 			if (frs1[`EXPONANT] > frs2[`EXPONANT]) begin
-				{A_is_Bigger,operand_a,operand_b} = {1'b0,frs1,frs2} ;
+				{operand_a,operand_b} = {frs1,frs2} ;
 			end
 			else begin
-				{A_is_Bigger,operand_a,operand_b} = {1'b1,frs2,frs1} ;
+				{operand_a,operand_b} = {frs2,frs1} ;
 			end
 		end
 
 	end
 
 	else if (frs1[`SIGN] && ~frs2[`SIGN]) begin
-		{A_is_Bigger,operand_a,operand_b} = {1'b1,frs2,frs1} ;
+		{operand_a,operand_b} = {frs2,frs1} ;
 	end
 
 	else if (~frs1[`SIGN] && frs2[`SIGN]) begin
-		{A_is_Bigger,operand_a,operand_b} = {1'b0,frs1,frs2} ;
+		{operand_a,operand_b} = {frs1,frs2} ;
 	end
 
 
@@ -138,34 +138,34 @@ always @(*) begin
 		if (frs1[29:23]) begin
 			if (frs2[29:23]) begin
 				if (frs1[`MANTISSA] > frs2[`MANTISSA]) begin
-					{A_is_Bigger,operand_a,operand_b} = {1'b1,frs2,frs1} ;
+					{operand_a,operand_b} = {frs2,frs1} ;
 				end
 				else begin
-					{A_is_Bigger,operand_a,operand_b} = {1'b0,frs1,frs2} ;
+					{operand_a,operand_b} = {frs1,frs2} ;
 				end
 			end
 			else begin
-				{A_is_Bigger,operand_a,operand_b} = {1'b0,frs1,frs2} ;
+				{operand_a,operand_b} = {frs1,frs2} ;
 			end
 		end
 
 		else if (frs1[`EXPONANT] == frs2[`EXPONANT]) begin
 
 			if (frs1[`MANTISSA] > frs2[`MANTISSA]) begin
-				{A_is_Bigger,operand_a,operand_b} = {1'b1,frs2,frs1} ;
+				{operand_a,operand_b} = {frs2,frs1} ;
 			end
 			else begin
-				{A_is_Bigger,operand_a,operand_b} = {1'b0,frs1,frs2} ;
+				{operand_a,operand_b} = {frs1,frs2} ;
 			end
 
 		end
 
 		else begin
 			if (frs1[`EXPONANT] > frs2[`EXPONANT]) begin
-				{A_is_Bigger,operand_a,operand_b} = {1'b1,frs2,frs1} ;
+				{operand_a,operand_b} = {frs2,frs1} ;
 			end
 			else begin
-				{A_is_Bigger,operand_a,operand_b} = {1'b0,frs1,frs2} ;
+				{operand_a,operand_b} = {frs1,frs2} ;
 			end
 		end
 
