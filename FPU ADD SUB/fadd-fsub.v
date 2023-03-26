@@ -7,9 +7,9 @@
 module fadd_fsub #(parameter XLEN = 32) (
 	input	wire	[XLEN-1 : 0] frs1,
 	input	wire	[XLEN-1 : 0] frs2,
-	input	wire				 En,
-	input	wire				 rst_n,
-	input	wire				 Funct,		// 0 for add - 1 for sub
+	input	wire		     En,
+	input	wire		     rst_n,
+	input	wire		     Funct,		// 0 for add - 1 for sub
 	output	reg 	[XLEN-1 : 0] frd
 	);
 
@@ -59,7 +59,34 @@ module fadd_fsub #(parameter XLEN = 32) (
 
 always @(*) begin
 
-	if (~frs1[`SIGN] && ~frs2[`SIGN] && ~Funct) begin
+	if (Funct) begin
+		if (~frs1[`SIGN] && frs2[`SIGN]) begin
+
+			if (frs1[`EXPONANT] == frs2[`EXPONANT]) begin
+				if (frs1[`MANTISSA] > frs2[`MANTISSA]) begin
+					{A_is_Bigger,operand_a,operand_b} = {1'b0,frs1,frs2} ;
+				end
+				else begin
+					{A_is_Bigger,operand_a,operand_b} = {1'b1,frs2,frs1} ;
+				end
+			end
+			
+			else if (frs1[`EXPONANT] < frs2[`EXPONANT]) begin
+				{A_is_Bigger,operand_a,operand_b} = {1'b1,frs2,frs1} ;
+			end	
+
+			else begin
+				{A_is_Bigger,operand_a,operand_b} = {1'b0,frs1,frs2} ;
+			end	
+		end
+
+		else begin
+			{A_is_Bigger,operand_a,operand_b} = {1'b0,frs1,frs2} ;		
+		end
+
+	end
+
+	else if (~frs1[`SIGN] && ~frs2[`SIGN]) begin
 		if (frs1[29:23]) begin
 
 			if (frs2[29:23]) begin
@@ -97,17 +124,14 @@ always @(*) begin
 
 	end
 
-	else if (frs1[`SIGN] && ~frs2[`SIGN] && ~Funct) begin
+	else if (frs1[`SIGN] && ~frs2[`SIGN]) begin
 		{A_is_Bigger,operand_a,operand_b} = {1'b1,frs2,frs1} ;
 	end
 
-	else if (~frs1[`SIGN] && frs2[`SIGN] && ~Funct) begin
+	else if (~frs1[`SIGN] && frs2[`SIGN]) begin
 		{A_is_Bigger,operand_a,operand_b} = {1'b0,frs1,frs2} ;
 	end
 
-	else if (Funct) begin
-		{A_is_Bigger,operand_a,operand_b} = {1'b0,frs1,frs2} ;
-	end
 
 	else begin
 
@@ -180,8 +204,13 @@ end
 	
 	////////////////// SELECT SIGN BIT //////////////////
 	always @(*) begin
-		if (Funct) begin
-			output_sign = operand_a[31] ;
+		if (Funct ) begin
+			if (A_is_Bigger) begin
+				output_sign = 1'b0 ;
+			end
+			else begin
+				output_sign = operand_a[31] ;
+			end
 		end
 		else begin
 			if (operand_a[31] && operand_b[31]) begin
