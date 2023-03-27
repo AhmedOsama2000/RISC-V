@@ -1,2 +1,2 @@
-# RISC-V
+# RV32IMF
 Graduation Project
