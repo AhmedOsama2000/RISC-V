@@ -1,0 +1,1450 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+!s11f vlog 2021.1 2021.01, Jan 19 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dE:/Study/ICs Design/Digital ICs/Projects/FFT Cordic/Vedic Multiplier
+T_opt
+!s110 1683575558
+Vz0`m_oZPDL_ijM[1WVG[I0
+04 15 4 work TOP_CORE_AXI_tb fast 0
+=1-8c16456d4904-64595306-189-fc8
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2021.1;73
+vbooth4code_gold
+Z2 !s110 1683575449
+!i10b 1
+!s100 `hCOFVUF8Lmgn:F`cIWhQ3
+I7hP5L<XEX90Z@cWgEo^LK0
+Z3 dE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Simulation
+w1678905792
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Mul/booth4code_gold.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Mul/booth4code_gold.v
+!i122 715
+Z4 L0 1 25
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OL;L;2021.1;73
+r1
+!s85 0
+31
+Z7 !s108 1683575449.000000
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Mul/booth4code_gold.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Mul/booth4code_gold.v|
+!i113 0
+Z8 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vbooth4code_ref
+Z9 !s110 1683575452
+!i10b 1
+!s100 <<E711MX9d>z8a8QI6aRY3
+I^`b:>agP=Imk0lWgM029_1
+R3
+w1678552684
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Mul/booth4code_ref.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Mul/booth4code_ref.v
+!i122 735
+Z10 L0 1 31
+R5
+R6
+r1
+!s85 0
+31
+Z11 !s108 1683575452.000000
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Mul/booth4code_ref.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Mul/booth4code_ref.v|
+!i113 0
+R8
+R1
+vBranch_Unit
+R9
+!i10b 1
+!s100 a]7TUY@9LOzczI:SK<R6l0
+I7hToUASh1SH9NYcIYH2MZ1
+R3
+w1683575269
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Branch/Branch Unit.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Branch/Branch Unit.v
+!i122 729
+Z12 L0 1 71
+R5
+R6
+r1
+!s85 0
+31
+R11
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Branch/Branch Unit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Branch/Branch Unit.v|
+!i113 0
+R8
+R1
+n@branch_@unit
+vcla_4bit_gold
+R2
+!i10b 1
+!s100 a`i2k;3Cm?ASBV>I31`ck0
+IYC0<KOGE2nGz>_07A2NT63
+R3
+w1678905827
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Mul/cla_4bit_gold.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Mul/cla_4bit_gold.v
+!i122 716
+Z13 L0 1 45
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Mul/cla_4bit_gold.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Mul/cla_4bit_gold.v|
+!i113 0
+R8
+R1
+vcla_4bit_ref
+R9
+!i10b 1
+!s100 Lzd?aK23ZQ?_zl8XelkcO2
+IL`^9F[^mbai<d[HHd:0j21
+R3
+w1678552697
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Mul/cla_4bit_ref.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Mul/cla_4bit_ref.v
+!i122 736
+L0 1 38
+R5
+R6
+r1
+!s85 0
+31
+R11
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Mul/cla_4bit_ref.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Mul/cla_4bit_ref.v|
+!i113 0
+R8
+R1
+vCLA_ADD_SUB
+Z14 !s110 1683575451
+!i10b 1
+!s100 RCO;QTLSB=L7h]zf<oGm?0
+IbgHHVm84QIcZ_lHjDZU;P1
+R3
+w1683573839
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Adder/CLA_Adder.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Adder/CLA_Adder.v
+!i122 727
+L0 1 58
+R5
+R6
+r1
+!s85 0
+31
+Z15 !s108 1683575451.000000
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Adder/CLA_Adder.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Adder/CLA_Adder.v|
+!i113 0
+R8
+R1
+n@c@l@a_@a@d@d_@s@u@b
+vcla_gold
+R2
+!i10b 1
+!s100 D[VR10RP2jG1RhLlKNC_@3
+I27kQ]f]fdBA?>NEOz9h@l1
+R3
+w1678905797
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Mul/cla_gold.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Mul/cla_gold.v
+!i122 717
+R10
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Mul/cla_gold.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Mul/cla_gold.v|
+!i113 0
+R8
+R1
+vcla_ref
+R9
+!i10b 1
+!s100 ?kE2gBll;VBi7G?igCa4O1
+Ie0DU:l<8=BGjl0Sj<mHY90
+R3
+Z16 w1678550028
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Mul/cla_ref.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Mul/cla_ref.v
+!i122 737
+L0 12 31
+R5
+R6
+r1
+!s85 0
+31
+R11
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Mul/cla_ref.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Mul/cla_ref.v|
+!i113 0
+R8
+R1
+vCLA_SUB
+Z17 !s110 1683575453
+!i10b 1
+!s100 d9;8d^AfDFedBH5U02Sl?0
+IL>CMRN2<mMd4^N[Tcf>hH3
+R3
+w1683573810
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Set/Subtractor.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Set/Subtractor.v
+!i122 744
+L0 1 54
+R5
+R6
+r1
+!s85 0
+31
+Z18 !s108 1683575453.000000
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Set/Subtractor.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Set/Subtractor.v|
+!i113 0
+R8
+R1
+n@c@l@a_@s@u@b
+vcompressor42_gold
+R2
+!i10b 1
+!s100 3_E7lI1^AVP_Rkg]<0QQW3
+Ikf]LMG`N34RIf?6KD^_7m0
+R3
+w1678905805
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Mul/compressor42_gold.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Mul/compressor42_gold.v
+!i122 718
+L0 1 19
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Mul/compressor42_gold.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Mul/compressor42_gold.v|
+!i113 0
+R8
+R1
+vcompressor42_ref
+R17
+!i10b 1
+!s100 nnSDKFALX1D?Ub?F8:FH?3
+IG;MOb`FCAMh;LR=W@hcF`0
+R3
+R16
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Mul/compressor42_ref.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Mul/compressor42_ref.v
+!i122 738
+L0 2 19
+R5
+R6
+r1
+!s85 0
+31
+R11
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Mul/compressor42_ref.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Mul/compressor42_ref.v|
+!i113 0
+R8
+R1
+vControl_Unit
+Z19 !s110 1683575447
+!i10b 1
+!s100 >b21mFU5YE_JADjaLU_c>3
+I@dU7NjEV2TD7dYa8oZXDI0
+R3
+w1683575325
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Controllers/Controller.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Controllers/Controller.v
+!i122 698
+L0 1 115
+R5
+R6
+r1
+!s85 0
+31
+Z20 !s108 1683575447.000000
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Controllers/Controller.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Controllers/Controller.v|
+!i113 0
+R8
+R1
+n@control_@unit
+vD_Cache
+Z21 !s110 1683575448
+!i10b 1
+!s100 <GKSn9M5d<8Y=UF6ZLDj<1
+IU17PRocV<kog[:HehT9o91
+R3
+w1677887425
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/D_Cache/D_Cache.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/D_Cache/D_Cache.v
+!i122 703
+L0 6 2113
+R5
+R6
+r1
+!s85 0
+31
+Z22 !s108 1683575448.000000
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/D_Cache/D_Cache.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/D_Cache/D_Cache.v|
+!i113 0
+R8
+R1
+n@d_@cache
+vD_Cache_AXI
+R19
+!i10b 1
+!s100 AZ_ZAA^<2LC]`c:bDM=Vm1
+I6znU?ndJc6:a`YJb?X<B13
+R3
+w1683373503
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/AXI/D_Cache_AXI.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/AXI/D_Cache_AXI.v
+!i122 696
+L0 3 205
+R5
+R6
+r1
+!s85 0
+31
+R20
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/AXI/D_Cache_AXI.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/AXI/D_Cache_AXI.v|
+!i113 0
+R8
+R1
+n@d_@cache_@a@x@i
+vD_Cache_control
+R21
+!i10b 1
+!s100 84d[YEeA[575>Ho^l]W?H0
+I;N0<HkV1LmM]T3V@4^KA`2
+R3
+w1679328249
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/D_Cache/D_Cache_control.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/D_Cache/D_Cache_control.v
+!i122 704
+L0 10 259
+R5
+R6
+r1
+!s85 0
+31
+R22
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/D_Cache/D_Cache_control.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/D_Cache/D_Cache_control.v|
+!i113 0
+R8
+R1
+n@d_@cache_control
+vD_Cache_TOP
+R21
+!i10b 1
+!s100 dQbEkMVG7T<CN^gmHzQ`B0
+IKEb<7N>QU>mDG[TLROcO22
+R3
+w1683573070
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/D_Cache/D_Cache_Top.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/D_Cache/D_Cache_Top.v
+!i122 705
+L0 1 98
+R5
+R6
+r1
+!s85 0
+31
+R22
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/D_Cache/D_Cache_Top.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/D_Cache/D_Cache_Top.v|
+!i113 0
+R8
+R1
+n@d_@cache_@t@o@p
+vDivision_BLOCK
+R9
+!i10b 1
+!s100 @NG=KMg82:RhZD[lkgC0z2
+Ia@7h8iXE=O=G]`]zGl15h1
+R3
+w1678554227
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Div/Division_Block.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Div/Division_Block.v
+!i122 732
+L0 1 80
+R5
+R6
+r1
+!s85 0
+31
+R11
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Div/Division_Block.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Div/Division_Block.v|
+!i113 0
+R8
+R1
+n@division_@b@l@o@c@k
+vDivision_Unit
+R9
+!i10b 1
+!s100 5b;W8[6gKIUh1F8gI2C@X1
+I_EP0OA=Rb@B@W9`7BLWO;0
+R3
+w1682899311
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Div/non_restoring_division.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Div/non_restoring_division.v
+!i122 733
+L0 1 151
+R5
+R6
+r1
+!s85 0
+31
+R11
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Div/non_restoring_division.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Div/non_restoring_division.v|
+!i113 0
+R8
+R1
+n@division_@unit
+vEX_MEM_REG
+R17
+!i10b 1
+!s100 [MA0jan`>Fbf>NBInleJ13
+Ib>I94H_N^M0Q6I>ilO2;X2
+R3
+w1679958628
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/pipelined ctrl_regs/EX_MEM_REG.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/pipelined ctrl_regs/EX_MEM_REG.v
+!i122 748
+L0 1 133
+R5
+R6
+r1
+!s85 0
+31
+R18
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/pipelined ctrl_regs/EX_MEM_REG.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/pipelined ctrl_regs/EX_MEM_REG.v|
+!i113 0
+R8
+R1
+n@e@x_@m@e@m_@r@e@g
+vF_ALU
+R21
+!i10b 1
+!s100 b:f8T_RTVhYM9`2n8RDIo1
+I48Z6QzZaRH93@FP;Bhce[1
+R3
+w1683573621
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_ALU.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_ALU.v
+!i122 706
+L0 1 103
+R5
+R6
+r1
+!s85 0
+31
+R22
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_ALU.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_ALU.v|
+!i113 0
+R8
+R1
+n@f_@a@l@u
+vF_CMP
+Z23 !s110 1683575454
+!i10b 1
+!s100 X8oY;k<K?0e<U>V0IGd:f2
+I9WT^O_2ja<g50g?0;Q<I<1
+R3
+w1679211099
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_CMP/F_CMP.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_CMP/F_CMP.v
+!i122 755
+L0 1 73
+R5
+R6
+r1
+!s85 0
+31
+Z24 !s108 1683575454.000000
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_CMP/F_CMP.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_CMP/F_CMP.v|
+!i113 0
+R8
+R1
+n@f_@c@m@p
+vF_CVT
+R2
+!i10b 1
+!s100 M_^Zd56hI8@dEBUQ?ROl80
+IzFKGNGQ25RAK7oh9MPmJR1
+R3
+w1683374579
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_CVT/F_CVT.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_CVT/F_CVT.v
+!i122 710
+L0 1 110
+R5
+R6
+r1
+!s85 0
+31
+R22
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_CVT/F_CVT.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_CVT/F_CVT.v|
+!i113 0
+R8
+R1
+n@f_@c@v@t
+vFA
+R17
+!i10b 1
+!s100 9`c[ce<:MJ<23M28eN`GK1
+IdA06GV5cnAD;V6bHTnOa`0
+R3
+w1676593639
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Set/Full_Adder.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Set/Full_Adder.v
+!i122 742
+Z25 L0 1 11
+R5
+R6
+r1
+!s85 0
+31
+R18
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Set/Full_Adder.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Set/Full_Adder.v|
+!i113 0
+R8
+R1
+n@f@a
+vfadd_fsub
+R21
+!i10b 1
+!s100 ]LW=gRFc[n?Abj8TV9[i:2
+IF<64AFOaO:ccY72EJ0>8F0
+R3
+w1679981855
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Add_Sub/fadd-fsub.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Add_Sub/fadd-fsub.v
+!i122 708
+L0 7 290
+R5
+R6
+r1
+!s85 0
+31
+R22
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Add_Sub/fadd-fsub.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Add_Sub/fadd-fsub.v|
+!i113 0
+R8
+R1
+vFALU_Control
+R19
+!i10b 1
+!s100 WA?7aSPf>hVn1De<6lRGi1
+I3_5NolX>BZPbY6MPJUg]J1
+R3
+w1683373738
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Controllers/FALU Control.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Controllers/FALU Control.v
+!i122 699
+R13
+R5
+R6
+r1
+!s85 0
+31
+R20
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Controllers/FALU Control.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Controllers/FALU Control.v|
+!i113 0
+R8
+R1
+n@f@a@l@u_@control
+vFALU_Decoder
+R21
+!i10b 1
+!s100 M[l53mUm8SFOcMoE@4B9C2
+IW]i:4>5n34[6`oSVol:H[3
+R3
+w1683374543
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_ALU_Decoder.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_ALU_Decoder.v
+!i122 707
+L0 1 23
+R5
+R6
+r1
+!s85 0
+31
+R22
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_ALU_Decoder.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_ALU_Decoder.v|
+!i113 0
+R8
+R1
+n@f@a@l@u_@decoder
+vForward_Unit
+Z26 !s110 1683575450
+!i10b 1
+!s100 Ba^VB^>0V;kT^QTboBcOL2
+IJ`4Ub6TQleV0nTe4NVz9_1
+R3
+w1679775819
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Forward/Forward.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Forward/Forward.v
+!i122 722
+L0 1 78
+R5
+R6
+r1
+!s85 0
+31
+Z27 !s108 1683575450.000000
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Forward/Forward.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Forward/Forward.v|
+!i113 0
+R8
+R1
+n@forward_@unit
+vfpu_err
+R23
+!i10b 1
+!s100 h]A8=ffW3>SMm;OBR@A^c2
+I@omm`L;2AeUS[T`IYScLA3
+R3
+w1678950776
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/FPU_ERR/fpu_err.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/FPU_ERR/fpu_err.v
+!i122 756
+L0 1 39
+R5
+R6
+r1
+!s85 0
+31
+R24
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/FPU_ERR/fpu_err.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/FPU_ERR/fpu_err.v|
+!i113 0
+R8
+R1
+vFPU_MUL
+R26
+!i10b 1
+!s100 @h@ddUmF?A<H9mn?:CNQh0
+IP3[P3EJolY_H@0UOg4GTG1
+R3
+w1679859634
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Mul/MULTIPLIER.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Mul/MULTIPLIER.v
+!i122 720
+L0 1 72
+R5
+R6
+r1
+!s85 0
+31
+R27
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Mul/MULTIPLIER.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Mul/MULTIPLIER.v|
+!i113 0
+R8
+R1
+n@f@p@u_@m@u@l
+vhalf_adder
+R17
+!i10b 1
+!s100 H=dM`jiGWQG4IAFk_IY]e2
+Io1bGhY69NFal[@UJfaJWi2
+R3
+R16
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Mul/half_adder.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Mul/half_adder.v
+!i122 739
+R25
+R5
+R6
+r1
+!s85 0
+31
+R18
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Mul/half_adder.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Mul/half_adder.v|
+!i113 0
+R8
+R1
+vHazard
+R23
+!i10b 1
+!s100 >:D_8cLZ_zhNf>^IAKOMc2
+I@o2n4<=<mTK9P=j`]]1UN2
+R3
+w1683572409
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Scoreboard/Scoreboard.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Scoreboard/Scoreboard.v
+!i122 753
+L0 1 199
+R5
+R6
+r1
+!s85 0
+31
+R24
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Scoreboard/Scoreboard.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Scoreboard/Scoreboard.v|
+!i113 0
+R8
+R1
+n@hazard
+vI_ALU
+R17
+!i10b 1
+!s100 nk[bKkN:@]3?PaNeaRX7C2
+IoFPM6m>03M655A_L859JG3
+R3
+w1683573894
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/I_ALU.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/I_ALU.v
+!i122 746
+L0 1 137
+R5
+R6
+r1
+!s85 0
+31
+R18
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/I_ALU.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/I_ALU.v|
+!i113 0
+R8
+R1
+n@i_@a@l@u
+vI_Cache
+R14
+!i10b 1
+!s100 :FCcW7Sh[7UUTaYGmTm>72
+IEohI^TUoW_eNjIcFj1JUO2
+R3
+w1683374826
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/I_Cache/I_Cache.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/I_Cache/I_Cache.v
+!i122 723
+L0 15 921
+R5
+R6
+r1
+!s85 0
+31
+R27
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/I_Cache/I_Cache.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/I_Cache/I_Cache.v|
+!i113 0
+R8
+R1
+n@i_@cache
+vI_Cache_AXI
+R19
+!i10b 1
+!s100 AB=EH@BHk_165PG]5N7nh1
+Ij5WXl]`S;jDBoEe>Mk8LH1
+R3
+w1682253814
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/AXI/I_Cache_AXI.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/AXI/I_Cache_AXI.v
+!i122 697
+L0 3 124
+R5
+R6
+r1
+!s85 0
+31
+R20
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/AXI/I_Cache_AXI.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/AXI/I_Cache_AXI.v|
+!i113 0
+R8
+R1
+n@i_@cache_@a@x@i
+vI_Cache_control
+R14
+!i10b 1
+!s100 gFhGb=j5JSznUUZgmLNJ81
+IGP8S5]D>b9YFV91o[^6MT3
+R3
+w1679328970
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/I_Cache/I_Cache_control.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/I_Cache/I_Cache_control.v
+!i122 724
+L0 5 174
+R5
+R6
+r1
+!s85 0
+31
+R15
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/I_Cache/I_Cache_control.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/I_Cache/I_Cache_control.v|
+!i113 0
+R8
+R1
+n@i_@cache_control
+vI_Cache_TOP
+R14
+!i10b 1
+!s100 [5A__Dd>2ZI7j392H7o8j3
+IaNzJjQQBVibNS5Z6g;QSf3
+R3
+w1682250414
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/I_Cache/I_Cache_TOP.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/I_Cache/I_Cache_TOP.v
+!i122 725
+L0 1 74
+R5
+R6
+r1
+!s85 0
+31
+R15
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/I_Cache/I_Cache_TOP.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/I_Cache/I_Cache_TOP.v|
+!i113 0
+R8
+R1
+n@i_@cache_@t@o@p
+vIALU_Control
+R21
+!i10b 1
+!s100 1[1]BV1d0;Mo0aoCHQl>W2
+IA=hG6Wg0B]jQho1o84nGP1
+R3
+w1683572209
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Controllers/IALU Control.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Controllers/IALU Control.v
+!i122 700
+L0 1 67
+R5
+R6
+r1
+!s85 0
+31
+R20
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Controllers/IALU Control.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Controllers/IALU Control.v|
+!i113 0
+R8
+R1
+n@i@a@l@u_@control
+vIALU_Decoder
+R17
+!i10b 1
+!s100 V_;5d[z^AdD6]zH1BJ6BP3
+I41cVj<AKlD<kVTznB:YnH2
+R3
+w1683375091
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/I_ALU_Decoder.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/I_ALU_Decoder.v
+!i122 747
+R4
+R5
+R6
+r1
+!s85 0
+31
+R18
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/I_ALU_Decoder.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/I_ALU_Decoder.v|
+!i113 0
+R8
+R1
+n@i@a@l@u_@decoder
+vID_EX_REG
+R23
+!i10b 1
+!s100 RBKBSMZfUNW5`15X0agU]2
+Il5VjzPmB2<PZhiA2U:kK81
+R3
+w1683375406
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/pipelined ctrl_regs/ID_EX_REG.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/pipelined ctrl_regs/ID_EX_REG.v
+!i122 749
+L0 1 156
+R5
+R6
+r1
+!s85 0
+31
+R24
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/pipelined ctrl_regs/ID_EX_REG.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/pipelined ctrl_regs/ID_EX_REG.v|
+!i113 0
+R8
+R1
+n@i@d_@e@x_@r@e@g
+vIMM_EXT
+R14
+!i10b 1
+!s100 B][XTmZ<]3BZR>U@2l=hY0
+I_ZM:6nSCJ07k250mO9DT02
+R3
+w1677546255
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/IMM EXT/Imm_Ext.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/IMM EXT/Imm_Ext.v
+!i122 726
+Z28 L0 1 47
+R5
+R6
+r1
+!s85 0
+31
+R15
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/IMM EXT/Imm_Ext.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/IMM EXT/Imm_Ext.v|
+!i113 0
+R8
+R1
+n@i@m@m_@e@x@t
+vLogical_Unit
+R9
+!i10b 1
+!s100 9j2@Xk7BENCeKlA;mVYmi0
+Ii@RUI]7?=LaZcX<;@E6EH2
+R3
+w1683573749
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Logic/Logical Unit.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Logic/Logical Unit.v
+!i122 734
+L0 1 37
+R5
+R6
+r1
+!s85 0
+31
+R11
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Logic/Logical Unit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Logic/Logical Unit.v|
+!i113 0
+R8
+R1
+n@logical_@unit
+vlzc_16
+R2
+!i10b 1
+!s100 c<P=1K5HFMhSgnLO5PUhG0
+IgMN7XZDV4j@5NFMHNn2>O2
+R3
+w1677162969
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_CVT/lzc_16.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_CVT/lzc_16.v
+!i122 713
+Z29 L0 1 52
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_CVT/lzc_16.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_CVT/lzc_16.v|
+!i113 0
+R8
+R1
+vlzc_32
+R2
+!i10b 1
+!s100 <KFhMW`_WUYl7CehogNnM1
+I^mFVTG9<RP`lffI495L0D0
+R3
+w1677240742
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_CVT/lzc_32.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_CVT/lzc_32.v
+!i122 714
+L0 1 56
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_CVT/lzc_32.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_CVT/lzc_32.v|
+!i113 0
+R8
+R1
+vlzc_4
+R2
+!i10b 1
+!s100 kPhak66B?^I5Q0MATGo9H3
+If;lkS;hiaSNzN;S_gNbZ31
+R3
+w1677162973
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_CVT/lzc_4.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_CVT/lzc_4.v
+!i122 711
+L0 1 33
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_CVT/lzc_4.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_CVT/lzc_4.v|
+!i113 0
+R8
+R1
+vlzc_8
+R2
+!i10b 1
+!s100 ZDQD=6e9mNEm96QMj8Jcz1
+I@mH:6F4H^>LYQd8]olob[3
+R3
+w1677163075
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_CVT/lzc_8.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_CVT/lzc_8.v
+!i122 712
+R28
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_CVT/lzc_8.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_CVT/lzc_8.v|
+!i113 0
+R8
+R1
+vMain_Decoder
+R21
+!i10b 1
+!s100 14<CbDPfY^<;HPlE0d6H23
+IlB[VfzgP`:;46IJ@IK3z;3
+R3
+w1683380247
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Controllers/Main Decoder.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Controllers/Main Decoder.v
+!i122 701
+L0 1 220
+R5
+R6
+r1
+!s85 0
+31
+R22
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Controllers/Main Decoder.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Controllers/Main Decoder.v|
+!i113 0
+R8
+R1
+n@main_@decoder
+vMEM_WB_REG
+R23
+!i10b 1
+!s100 j2<BfoS9BHcET_dI=[?[U2
+Ico4HGe1JKmc=TSCYgIN[l1
+R3
+w1683573540
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/pipelined ctrl_regs/MEM_WB_REG.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/pipelined ctrl_regs/MEM_WB_REG.v
+!i122 750
+R12
+R5
+R6
+r1
+!s85 0
+31
+R24
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/pipelined ctrl_regs/MEM_WB_REG.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/pipelined ctrl_regs/MEM_WB_REG.v|
+!i113 0
+R8
+R1
+n@m@e@m_@w@b_@r@e@g
+vMemory_Ctrl
+R21
+!i10b 1
+!s100 Il?a4Wm]SInYb[G@nL2hZ1
+IIe:h=He_WIN0GkeE9ZzlQ2
+R3
+w1683374278
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Controllers/Memory_Control.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Controllers/Memory_Control.v
+!i122 702
+L0 1 40
+R5
+R6
+r1
+!s85 0
+31
+R22
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Controllers/Memory_Control.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Controllers/Memory_Control.v|
+!i113 0
+R8
+R1
+n@memory_@ctrl
+vmul_top
+R2
+!i10b 1
+!s100 EBRgk@0Lkic9DAk16J<D61
+I]>DcY52o3o6zZ;2@?MAjK1
+R3
+w1678947311
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Mul/mul_top_gold.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Mul/mul_top_gold.v
+!i122 719
+L0 1 150
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Mul/mul_top_gold.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Mul/mul_top_gold.v|
+!i113 0
+R8
+R1
+vmul_top_ref
+R17
+!i10b 1
+!s100 EK6?hYPAjzm@[8S:??g5S3
+Ime`K^`a@>3i]cENFdeKF<3
+R3
+w1683374956
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Mul/mul_top_ref.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Mul/mul_top_ref.v
+!i122 740
+L0 1 175
+R5
+R6
+r1
+!s85 0
+31
+R18
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Mul/mul_top_ref.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Mul/mul_top_ref.v|
+!i113 0
+R8
+R1
+vmux2x1
+Z30 !s110 1683575446
+!i10b 1
+!s100 @V9P@Te;n@V7?LBY6ZQbb2
+IRI6Fk=FIa?dm3Y1C:ClC[1
+R3
+w1683372965
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/mux2x1.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/mux2x1.v
+!i122 692
+L0 1 20
+R5
+R6
+r1
+!s85 0
+31
+Z31 !s108 1683575446.000000
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/mux2x1.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/mux2x1.v|
+!i113 0
+R8
+R1
+vmux4x1
+R19
+!i10b 1
+!s100 o1[oAT<T`Vz8G8ENMF7I53
+IKcc[1lTJ7Q<JfezgQIizY1
+R3
+w1683373092
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/mux4x1.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/mux4x1.v
+!i122 693
+L0 1 32
+R5
+R6
+r1
+!s85 0
+31
+R20
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/mux4x1.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/mux4x1.v|
+!i113 0
+R8
+R1
+vPC
+R23
+!i10b 1
+!s100 [j6fTbBAnFHadd5O[07[o1
+I0Ah<<]IK7nOgeE0aFRW?>0
+R3
+w1683375122
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/PC/PC.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/PC/PC.v
+!i122 754
+L0 1 41
+R5
+R6
+r1
+!s85 0
+31
+R24
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/PC/PC.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/PC/PC.v|
+!i113 0
+R8
+R1
+n@p@c
+vpg_gen
+R17
+!i10b 1
+!s100 cWLXcGmD`fbaJhKcHfDjC3
+IjkU=Zj8o2<7`M:d1z4D`80
+R3
+R16
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Mul/pg_gen_ref.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Mul/pg_gen_ref.v
+!i122 741
+Z32 L0 1 12
+R5
+R6
+r1
+!s85 0
+31
+R18
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Mul/pg_gen_ref.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Mul/pg_gen_ref.v|
+!i113 0
+R8
+R1
+vpg_gen_gold
+R26
+!i10b 1
+!s100 N`UUbTHklcDCFnz:JDd?X3
+I1j0i>j@oOGiM5W7fTTB3>3
+R3
+w1677019373
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Mul/pg_gen_gold.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Mul/pg_gen_gold.v
+!i122 721
+R32
+R5
+R6
+r1
+!s85 0
+31
+R27
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Mul/pg_gen_gold.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Mul/pg_gen_gold.v|
+!i113 0
+R8
+R1
+vpriority_encoder
+R21
+!i10b 1
+!s100 8Yz1ePUL@zM]zHQc3F;VU3
+I[Hd3<OW]_JWFA81Vez3?>0
+R3
+w1679981826
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Add_Sub/Priority Encoder.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Add_Sub/Priority Encoder.v
+!i122 709
+L0 1 276
+R5
+R6
+r1
+!s85 0
+31
+R22
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Add_Sub/Priority Encoder.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Add_Sub/Priority Encoder.v|
+!i113 0
+R8
+R1
+vRegFile_F
+R23
+!i10b 1
+!s100 zl6P96W?M6F>h=X3ZKV>b0
+Iz:hzilONf04aLLT0COOJf3
+R3
+w1679213565
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/RegFiles/RegFile_F.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/RegFiles/RegFile_F.v
+!i122 751
+Z33 L0 1 51
+R5
+R6
+r1
+!s85 0
+31
+R24
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/RegFiles/RegFile_F.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/RegFiles/RegFile_F.v|
+!i113 0
+R8
+R1
+n@reg@file_@f
+vRegFile_I
+R23
+!i10b 1
+!s100 4Sd2;1KcT9JVB1eBD0mTe0
+IfdbQJZcNUP41:M4CgQ4kH3
+R3
+w1679213560
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/RegFiles/RegFile_I.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/RegFiles/RegFile_I.v
+!i122 752
+R33
+R5
+R6
+r1
+!s85 0
+31
+R24
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/RegFiles/RegFile_I.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/RegFiles/RegFile_I.v|
+!i113 0
+R8
+R1
+n@reg@file_@i
+vRV32IMF
+R30
+!i10b 1
+!s100 :hzHMg_^DjmjfF_g<[Y[=1
+I1o7dnS3f4n2cGWB;ILdHC1
+R3
+w1683574735
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Core.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Core.v
+!i122 691
+L0 4 743
+R5
+R6
+r1
+!s85 0
+31
+R31
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Core.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Core.v|
+!i113 0
+R8
+R1
+n@r@v32@i@m@f
+vSET_UNIT
+R17
+!i10b 1
+!s100 =BG5=amo^o0R0WN_DOM>c0
+IUKN^1=JB=ihj<h4gabdOK0
+R3
+w1683573798
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Set/Set_Unit.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Set/Set_Unit.v
+!i122 743
+R29
+R5
+R6
+r1
+!s85 0
+31
+R18
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Set/Set_Unit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Set/Set_Unit.v|
+!i113 0
+R8
+R1
+n@s@e@t_@u@n@i@t
+vShift_Unit
+R17
+!i10b 1
+!s100 hf=Lc6h7G3T1Aahh317m12
+IfKkRQbdg4@@^^F19jZC6^0
+R3
+w1677251545
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Shift/Shift Unit.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Shift/Shift Unit.v
+!i122 745
+L0 1 69
+R5
+R6
+r1
+!s85 0
+31
+R18
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Shift/Shift Unit.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Shift/Shift Unit.v|
+!i113 0
+R8
+R1
+n@shift_@unit
+vTOP_CORE_AXI
+R19
+!i10b 1
+!s100 Z`c<eY^0k[1:<`m:@O>^K2
+I6`BIYH^PTNH>fjR=P6E190
+R3
+w1683373146
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/TOP_CORE_AXI.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/TOP_CORE_AXI.v
+!i122 694
+L0 13 263
+R5
+R6
+r1
+!s85 0
+31
+R20
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/TOP_CORE_AXI.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/TOP_CORE_AXI.v|
+!i113 0
+R8
+R1
+n@t@o@p_@c@o@r@e_@a@x@i
+vTOP_CORE_AXI_tb
+R19
+!i10b 1
+!s100 GD9Z?]jaVjiBWCi^6Q9o[3
+IiM4hJ7VgF@z10f;C^dY8g1
+R3
+w1683575442
+8E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/TOP_CORE_AXI_tb.v
+FE:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/TOP_CORE_AXI_tb.v
+!i122 695
+L0 2 258
+R5
+R6
+r1
+!s85 0
+31
+R20
+!s107 E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/TOP_CORE_AXI_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/TOP_CORE_AXI_tb.v|
+!i113 0
+R8
+R1
+n@t@o@p_@c@o@r@e_@a@x@i_tb

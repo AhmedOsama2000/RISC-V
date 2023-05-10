@@ -1,0 +1,463 @@
+{E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Set/Set_Unit.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Set/Set_Unit.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module SET_UNIT
+
+Top level modules:
+	SET_UNIT
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_CMP/F_CMP.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_CMP/F_CMP.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module F_CMP
+
+Top level modules:
+	F_CMP
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Mul/MULTIPLIER.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Mul/MULTIPLIER.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module FPU_MUL
+
+Top level modules:
+	FPU_MUL
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Branch/Full_Adder.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Branch/Full_Adder.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module FA
+
+Top level modules:
+	FA
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Add_Sub/fadd-fsub.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Add_Sub/fadd-fsub.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module fadd_fsub
+
+Top level modules:
+	fadd_fsub
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Mul/compressor42_gold.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Mul/compressor42_gold.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module compressor42_gold
+
+Top level modules:
+	compressor42_gold
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Logic/Logical Unit.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Logic/Logical Unit.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module Logical_Unit
+
+Top level modules:
+	Logical_Unit
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/pipelined ctrl_regs/MEM_WB_REG.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/pipelined ctrl_regs/MEM_WB_REG.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module MEM_WB_REG
+
+Top level modules:
+	MEM_WB_REG
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Mul/pg_gen_gold.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Mul/pg_gen_gold.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module pg_gen_gold
+
+Top level modules:
+	pg_gen_gold
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Div/non_restoring_division.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Div/non_restoring_division.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module Division_Unit
+
+Top level modules:
+	Division_Unit
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Add_Sub/Priority Encoder.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Add_Sub/Priority Encoder.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module priority_encoder
+
+Top level modules:
+	priority_encoder
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/TOP_CORE_AXI_tb.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/TOP_CORE_AXI_tb.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module TOP_CORE_AXI_tb
+
+Top level modules:
+	TOP_CORE_AXI_tb
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/FPU_ERR/fpu_err.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/FPU_ERR/fpu_err.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module fpu_err
+
+Top level modules:
+	fpu_err
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Branch/Branch Unit.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Branch/Branch Unit.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module Branch_Unit
+
+Top level modules:
+	Branch_Unit
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_CVT/lzc_32.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_CVT/lzc_32.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module lzc_32
+
+Top level modules:
+	lzc_32
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Mul/compressor42_ref.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Mul/compressor42_ref.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module compressor42_ref
+
+Top level modules:
+	compressor42_ref
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/D_Cache/D_Cache_Top.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/D_Cache/D_Cache_Top.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module D_Cache_TOP
+
+Top level modules:
+	D_Cache_TOP
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/I_ALU.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/I_ALU.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module I_ALU
+
+Top level modules:
+	I_ALU
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/AXI/D_Cache_AXI.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/AXI/D_Cache_AXI.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module D_Cache_AXI
+
+Top level modules:
+	D_Cache_AXI
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_ALU_Decoder.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_ALU_Decoder.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module FALU_Decoder
+
+Top level modules:
+	FALU_Decoder
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Mul/booth4code_ref.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Mul/booth4code_ref.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module booth4code_ref
+
+Top level modules:
+	booth4code_ref
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Mul/mul_top_gold.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Mul/mul_top_gold.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module mul_top
+
+Top level modules:
+	mul_top
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Mul/booth4code_gold.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Mul/booth4code_gold.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module booth4code_gold
+
+Top level modules:
+	booth4code_gold
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Mul/cla_ref.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Mul/cla_ref.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cla_ref
+
+Top level modules:
+	cla_ref
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Core.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Core.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module RV32IMF
+
+Top level modules:
+	RV32IMF
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Forward/Forward.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Forward/Forward.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module Forward_Unit
+
+Top level modules:
+	Forward_Unit
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/I_Cache/I_Cache_TOP.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/I_Cache/I_Cache_TOP.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module I_Cache_TOP
+
+Top level modules:
+	I_Cache_TOP
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Controllers/Controller.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Controllers/Controller.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module Control_Unit
+
+Top level modules:
+	Control_Unit
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Set/Subtractor.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Set/Subtractor.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module CLA_SUB
+
+Top level modules:
+	CLA_SUB
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Mul/cla_gold.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Mul/cla_gold.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cla_gold
+
+Top level modules:
+	cla_gold
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/D_Cache/D_Cache.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/D_Cache/D_Cache.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module D_Cache
+
+Top level modules:
+	D_Cache
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_CVT/lzc_16.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_CVT/lzc_16.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module lzc_16
+
+Top level modules:
+	lzc_16
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/RegFiles/RegFile_I.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/RegFiles/RegFile_I.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module RegFile_I
+
+Top level modules:
+	RegFile_I
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/IMM EXT/Imm_Ext.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/IMM EXT/Imm_Ext.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module IMM_EXT
+
+Top level modules:
+	IMM_EXT
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Scoreboard/Scoreboard.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Scoreboard/Scoreboard.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module Hazard
+
+Top level modules:
+	Hazard
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Adder/Full_Adder.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Adder/Full_Adder.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module FA
+
+Top level modules:
+	FA
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Mul/cla_4bit_ref.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Mul/cla_4bit_ref.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cla_4bit_ref
+
+Top level modules:
+	cla_4bit_ref
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/pipelined ctrl_regs/ID_EX_REG.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/pipelined ctrl_regs/ID_EX_REG.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module ID_EX_REG
+
+Top level modules:
+	ID_EX_REG
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/TOP_CORE_AXI.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/TOP_CORE_AXI.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module TOP_CORE_AXI
+
+Top level modules:
+	TOP_CORE_AXI
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/PC/PC.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/PC/PC.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module PC
+
+Top level modules:
+	PC
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/mux2x1.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/mux2x1.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module mux2x1
+
+Top level modules:
+	mux2x1
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/D_Cache/D_Cache_control.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/D_Cache/D_Cache_control.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module D_Cache_control
+
+Top level modules:
+	D_Cache_control
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/pipelined ctrl_regs/EX_MEM_REG.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/pipelined ctrl_regs/EX_MEM_REG.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module EX_MEM_REG
+
+Top level modules:
+	EX_MEM_REG
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Controllers/Memory_Control.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Controllers/Memory_Control.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module Memory_Ctrl
+
+Top level modules:
+	Memory_Ctrl
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/mux4x1.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/mux4x1.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module mux4x1
+
+Top level modules:
+	mux4x1
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/I_Cache/I_Cache.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/I_Cache/I_Cache.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module I_Cache
+
+Top level modules:
+	I_Cache
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Div/Division_Block.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Div/Division_Block.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module Division_BLOCK
+
+Top level modules:
+	Division_BLOCK
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Controllers/Main Decoder.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Controllers/Main Decoder.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module Main_Decoder
+
+Top level modules:
+	Main_Decoder
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Controllers/IALU Control.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Controllers/IALU Control.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module IALU_Control
+
+Top level modules:
+	IALU_Control
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/RegFiles/RegFile_F.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/RegFiles/RegFile_F.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module RegFile_F
+
+Top level modules:
+	RegFile_F
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_ALU.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_ALU.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module F_ALU
+
+Top level modules:
+	F_ALU
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Set/Full_Adder.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Set/Full_Adder.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module FA
+
+Top level modules:
+	FA
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Adder/CLA_Adder.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Adder/CLA_Adder.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module CLA_ADD_SUB
+
+Top level modules:
+	CLA_ADD_SUB
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Branch/Subtractor.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Branch/Subtractor.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module CLA_SUB
+
+Top level modules:
+	CLA_SUB
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Mul/cla_4bit_gold.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_Mul/cla_4bit_gold.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module cla_4bit_gold
+
+Top level modules:
+	cla_4bit_gold
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Controllers/FALU Control.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Controllers/FALU Control.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module FALU_Control
+
+Top level modules:
+	FALU_Control
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/I_Cache/I_Cache_control.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/I_Cache/I_Cache_control.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module I_Cache_control
+
+Top level modules:
+	I_Cache_control
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Mul/mul_top_ref.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Mul/mul_top_ref.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module mul_top_ref
+
+Top level modules:
+	mul_top_ref
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Shift/Shift Unit.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Shift/Shift Unit.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module Shift_Unit
+
+Top level modules:
+	Shift_Unit
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_CVT/lzc_4.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_CVT/lzc_4.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module lzc_4
+
+Top level modules:
+	lzc_4
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/I_ALU_Decoder.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/I_ALU_Decoder.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module IALU_Decoder
+
+Top level modules:
+	IALU_Decoder
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Mul/half_adder.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Mul/half_adder.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module half_adder
+
+Top level modules:
+	half_adder
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/AXI/I_Cache_AXI.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/AXI/I_Cache_AXI.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module I_Cache_AXI
+
+Top level modules:
+	I_Cache_AXI
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_CVT/lzc_8.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_CVT/lzc_8.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module lzc_8
+
+Top level modules:
+	lzc_8
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Mul/pg_gen_ref.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Integer ALU/Mul/pg_gen_ref.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module pg_gen
+
+Top level modules:
+	pg_gen
+
+} {} {}} {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_CVT/F_CVT.v} {1 {vlog -work work -vopt -stats=none {E:/Study/ICs Design/Digital ICs/Projects/Graduation Project/Core/Integration/Floating ALU/F_CVT/F_CVT.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module F_CVT
+
+Top level modules:
+	F_CVT
+
+} {} {}}
