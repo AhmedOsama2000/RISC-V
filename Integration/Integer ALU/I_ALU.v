@@ -89,7 +89,7 @@ Logical_Unit Logic (
 Shift_Unit shift (
 	.En(D_out[5]),
 	.Rs1(Rs1),
-	.Rs2(Rs2),
+	.Rs2(Rs2[4:0]),
 	.funct3_2(Funct3[2]),
 	.funct7_5(Funct7_5),
 	.Result(shift_res)
@@ -99,7 +99,7 @@ Shift_Unit shift (
 Branch_Unit branch (
 	.Rs1(Rs1),
 	.Rs2(Rs2),
-	.funct3(funct3),
+	.funct3(Funct3),
 	.En(D_out[6]),
 	.Branch_taken(Branch_taken)
 );

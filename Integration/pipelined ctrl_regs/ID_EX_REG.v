@@ -74,7 +74,7 @@ module ID_EX_REG #(
 	output reg               store_src_O,
 	output reg 		 		 MEM_Rd_En_O,
 	output reg 		 		 MEM_Wr_En_O,
-	output reg 		 		 Src_to_Reg_O,
+	// output reg 		 		 Src_to_Reg_O,
 	output reg               LB_O,
 	output reg               LH_O,
 	output reg               SB_O,
@@ -110,7 +110,7 @@ always @(posedge CLK,negedge rst_n) begin
 		store_src_O     <= 1'b0;
 		MEM_Rd_En_O     <= 1'b0;
 		MEM_Wr_En_O     <= 1'b0;
-		Src_to_Reg_O    <= 1'b0;
+		// Src_to_Reg_O    <= 1'b0;
 		LB_O            <= 1'b0;
 		LH_O            <= 1'b0;
 		SB_O            <= 1'b0;

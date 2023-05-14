@@ -124,7 +124,7 @@ RISC_V_WITH_AXI(
 .D_Cache_AXI_ARPROT(D_Cache_AXI_ARPROT_tb) ,		
 .D_Cache_AXI_ARADDR(D_Cache_AXI_ARADDR_tb) ,		
 .D_Cache_AXI_ARCACHE(D_Cache_AXI_ARCACHE_tb) ,
-.D_Cache_AXI_RREADY(D_Cache_AXI_ARCACHE_tb) 				
+.D_Cache_AXI_RREADY(D_Cache_AXI_RREADY_tb) 				
 
 );
 
@@ -195,10 +195,8 @@ task reset ();
   	$display("Alert!");
 	$display ("-----RESET----");
 	$display("===============================================================================");
- 	rst_n_tb = 1'b1 ;
- 	#10
  	rst_n_tb = 1'b0 ;
- 	#10
+ 	#20
  	rst_n_tb = 1'b1 ;
  end
 endtask

@@ -2,7 +2,7 @@
 
 module I_Cache_AXI #(
 
-parameter WIDTH_DATA = 32 ,
+parameter WIDTH_DATA = 32,
 parameter DATA = 32 ,
 parameter N_WORD = 8 ,
 parameter WIDTH_ADD = 32 
@@ -25,7 +25,7 @@ input	wire							AXI_RESETn ,
 // Write data channel signals
 // input
 input	wire							AXI_WVALID ,				
-input	wire	[WIDTH_DATA-1:0]		AXI_WDATA ,		
+input	wire	[WIDTH_DATA*N_WORD-1:0] AXI_WDATA ,		
 input	wire	[3:0]					AXI_WSTRB , 
 // output
 output	reg								AXI_WREADY ,				

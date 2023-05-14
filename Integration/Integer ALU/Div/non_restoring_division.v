@@ -1,14 +1,13 @@
 module Division_Unit #(
-	parameter MANTISAA    = 23,
-	parameter COUNT_WIDTH = 5,
-	parameter XLEN        = 32
+	parameter XLEN    = 32,
+	parameter COUNT_WIDTH = 5
 )
 (
 	//inputs
 	input  wire               	 CLK,
 	input  wire               	 rst_n,
-    input  wire [MANTISAA - 1:0] dividend,
-    input  wire [MANTISAA - 1:0] divisor,
+    input  wire [XLEN - 1:0] dividend,
+    input  wire [XLEN - 1:0] divisor,
     input  wire               	 data_valid,
 
 	//outputs    

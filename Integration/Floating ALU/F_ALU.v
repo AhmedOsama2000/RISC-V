@@ -28,7 +28,7 @@ wire div_overflow;
 
 // ALU Decoder
 FALU_Decoder falu_decode (
-	.FALU_Ctrl(ALU_ctrl),
+	.FALU_Ctrl(FALU_ctrl),
 	.D_out(D_out)
 );
 
@@ -79,22 +79,22 @@ always @(posedge CLK,negedge rst_n) begin
 	if (!rst_n) begin
 		Result   <= 'b0;
 	end
-	else if (ALU_ctrl == 3'b000) begin
+	else if (FALU_ctrl == 3'b000) begin
 		Result   <= add_sub_res;
 		// overflow <= add_sub_overflow;
 	end
-	else if (ALU_ctrl == 3'b001) begin
+	else if (FALU_ctrl == 3'b001) begin
 		Result   <= mul_res;
 		overflow <= mul_overflow;
 	end
-	else if (ALU_ctrl == 3'b010) begin
+	else if (FALU_ctrl == 3'b010) begin
 		Result   <= div_res;
 		overflow <= div_overflow;
 	end
-	else if (ALU_ctrl == 3'b010) begin
+	else if (FALU_ctrl == 3'b010) begin
 		Result   <= cmp_res;
 	end
-	else if (ALU_ctrl == 3'b011) begin
+	else if (FALU_ctrl == 3'b011) begin
 		Result   <= cvt_res;
 	end
 

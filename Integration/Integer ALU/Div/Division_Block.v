@@ -47,8 +47,8 @@ assign converation_enable =  is_sign_operation & ((sign_divisor & !sign_dividend
 	//inputs
 	.CLK(CLK),
 	.rst_n(rst_n),
-    	.dividend(dividend_div),
-    	.divisor(divisor_div),
+    .dividend(dividend_div),
+    .divisor(divisor_div),
    	.data_valid(data_valid),
 
 	//outputs    
