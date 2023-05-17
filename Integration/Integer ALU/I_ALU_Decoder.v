@@ -1,6 +1,6 @@
 module IALU_Decoder #(
 	parameter DECODER_IN  = 3,
-	parameter DECODER_OUT = 2^(DECODER_IN) 
+	parameter DECODER_OUT = 2**(DECODER_IN) 
 )
 (
 	input  wire [DECODER_IN-1:0]  IALU_Ctrl,

@@ -1,7 +1,7 @@
 module I_ALU #(
 	parameter XLEN 		  = 32,
 	parameter DECODER_IN  = 3,
-	parameter DECODER_OUT = 2^(DECODER_IN) 
+	parameter DECODER_OUT = 2**(DECODER_IN) 
 )
 (
 	input  wire                  rst_n,
