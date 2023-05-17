@@ -51,6 +51,7 @@ assign mnt_2 = Rs2[22:0];
 mul_top mul (
     .a_i({8'b0,1'b1,mnt_1}),
     .b_i({8'b0,1'b1,mnt_2}),
+    .En(En),
     .mul_o(product)
 );
 

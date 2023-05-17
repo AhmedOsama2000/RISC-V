@@ -47,12 +47,12 @@ CLA_ADD_SUB CLA (
 );
 
 // Mul Unit
-mul_top_ref mul (
+Multiblacation_Unit mul (
 	.En(D_out[1]),
-	.Multiplier(Rs1),
-	.Multiplicand(Rs2),
-	.Funct_1_0(Funct3[1:0]),
-	.Result(mul_res)
+	.Multiplier_i(Rs1),
+	.Multiplacant_i(Rs2),
+	.operation_i(Funct3[1:0]),
+	.product_o(mul_res)
 );
 
 Division_BLOCK div (
