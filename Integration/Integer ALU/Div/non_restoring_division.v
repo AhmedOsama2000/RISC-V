@@ -86,11 +86,12 @@ always @(posedge CLK) begin
 		IDLE: begin
 			counter    <= 'b0;
 			data_ready <= 1'b0;
+			flag_zero  <= 1'b0;
 			
 			if (data_valid) begin
 					if(!divisor) begin
-						flag_zero <= 1'b1 ;
-						data_ready <= 1'b1 ;	
+						flag_zero <= 1'b1;
+						data_ready <= 1'b1;	
 					end else begin
 						{accumulator_reg,dividend_Q} <=    {24'b0,dividend};
 						divisor_reg 		     <=             divisor;
