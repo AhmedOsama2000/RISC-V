@@ -1,7 +1,7 @@
 module I_ALU #(
 	parameter XLEN 		  = 32,
 	parameter DECODER_IN  = 3,
-	parameter DECODER_OUT = 2**(DECODER_IN) 
+	parameter DECODER_OUT = 2**DECODER_IN
 )
 (
 	input  wire                  rst_n,
@@ -113,14 +113,14 @@ always @(posedge CLK,negedge rst_n) begin
 		Result   <= 'b0;
 		overflow <= 1'b0;
 	end
+	else if (div_done) begin
+	   Result    <= div_res;
+	end
 	else if (IALU_ctrl == 3'b000) begin
 		Result   <= add_sub_res;
 	end
 	else if (IALU_ctrl == 3'b001) begin
 		Result   <= mul_res;
-	end
-	else if (IALU_ctrl == 3'b010) begin
-		Result   <= div_res;
 	end
 	else if (IALU_ctrl == 3'b011) begin
 		Result   <= set_res;
