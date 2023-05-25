@@ -3,13 +3,13 @@ module Shift_Unit #(
 )
 (
 	// INPUT
-	input  wire signed [XLEN-1:0] Rs1,
-	input  wire  	   [4:0] 	  Rs2,
-	input  wire  			 	  funct3_2, 
-	input  wire              	  funct7_5,
-	input  wire              	  En,
+	input  wire  [XLEN-1:0] Rs1,
+	input  wire  [4:0] 	    Rs2,
+	input  wire  			funct3_2, 
+	input  wire  			funct7_5,
+	input  wire  			En,
 	// OUTPUT
-	output reg         [XLEN-1:0] Result
+	output reg   [XLEN-1:0] Result
 );
 
 reg [XLEN-1:0] t0;
