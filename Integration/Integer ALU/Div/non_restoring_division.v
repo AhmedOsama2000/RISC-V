@@ -87,6 +87,8 @@ always @(posedge CLK) begin
 			counter    <= 'b0;
 			data_ready <= 1'b0;
 			flag_zero  <= 1'b0;
+			quotient   <= 32'b0;
+			remainder  <= 32'b0;
 			
 			if (data_valid) begin
 					if(!divisor) begin
