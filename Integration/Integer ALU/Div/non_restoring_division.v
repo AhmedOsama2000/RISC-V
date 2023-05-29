@@ -4,17 +4,17 @@ module Division_Unit #(
 )
 (
 	//inputs
-	input  wire               	 CLK,
-	input  wire               	 rst_n,
+	input  wire              CLK,
+	input  wire              rst_n,
     input  wire [XLEN - 1:0] dividend,
     input  wire [XLEN - 1:0] divisor,
-    input  wire               	 data_valid,
+    input  wire              data_valid,
+    input  wire              div_by_zero,
 
 	//outputs    
-	output reg  [XLEN - 1:0]     quotient,
-	output reg  [XLEN - 1:0]     remainder,
-	output wire                  divided_by_zero,
-	output reg                   data_ready
+	output reg  [XLEN - 1:0] quotient,
+	output reg  [XLEN - 1:0] remainder,
+	output reg               data_ready
 );
 
 localparam IDLE    = 2'b00;
@@ -26,19 +26,16 @@ reg [1:0] CS;
 
 reg [COUNT_WIDTH-1:0] counter;
 
-reg [XLEN-1:0] 		  dividend_Q;
-reg [XLEN-1:0] 		  dividend_temp;
+reg [XLEN-1:0] 	dividend_Q;
+reg [XLEN-1:0] 	dividend_temp;
 
-reg [XLEN:0] 		  accumulator_reg;
-reg [XLEN:0] 		  accumulator;
+reg [XLEN:0] 	accumulator_reg;
+reg [XLEN:0] 	accumulator;
 
-reg [XLEN-1:0] 		  divisor_reg;
+reg [XLEN-1:0] 	divisor_reg;
 
-reg                  	  Q_LSB;
-reg                       flag_zero ;
-
-assign divided_by_zero = (flag_zero & (!divisor)) ? 1'b1 : 1'b0 ;
-
+reg             Q_LSB;
+reg             flag_zero ;
 
 // Next State Logic
 always @(posedge CLK,negedge rst_n) begin
@@ -57,7 +54,7 @@ always @(*) begin
 	
 	case (CS)
 		IDLE: begin
-			if (data_valid & (divisor != 'b0)) begin
+			if (data_valid & !div_by_zero) begin
 				NS = DIVIDE;
 			end
 			else begin
@@ -80,42 +77,40 @@ always @(*) begin
 end
 
 // FSM OUTPUT
-always @(posedge CLK) begin
-	
-	case(CS)
-		IDLE: begin
-			counter    <= 'b0;
-			data_ready <= 1'b0;
-			flag_zero  <= 1'b0;
-			quotient   <= 32'b0;
-			remainder  <= 32'b0;
-			
-			if (data_valid) begin
-					if(!divisor) begin
-						flag_zero <= 1'b1;
-						data_ready <= 1'b1;	
-					end else begin
-						{accumulator_reg,dividend_Q} <=    {24'b0,dividend};
-						divisor_reg 		     <=             divisor;
-						flag_zero                    <=               1'b0 ;		
-					end
-			end
-		end
-		DIVIDE: begin
-			{accumulator_reg,dividend_Q} <= {accumulator,dividend_temp[XLEN-1:1],Q_LSB};
-			 counter <= counter + 1;
-		end
-		CORRECT: begin
-			quotient   <= dividend_Q;
-			remainder  <= accumulator;
-			data_ready <= 1'b1;
-		end
-	endcase
+always @(posedge CLK,negedge rst_n) begin
+	if (!rst_n) begin
+	   counter    <= 'b0;
+	   data_ready <= 1'b0;
+	   flag_zero  <= 1'b0;
+	   quotient   <= 32'b0;
+       remainder  <= 32'b0;
+    end
+    else begin
+        case(CS)
+            IDLE: begin
+                data_ready <= 1'b0;
+                if (data_valid) begin
+                    {accumulator_reg,dividend_Q} <= {24'b0,dividend};
+                    divisor_reg 		         <= divisor;	
+                end
+		    end
+            DIVIDE: begin
+                {accumulator_reg,dividend_Q} <= {accumulator,dividend_temp[XLEN-1:1],Q_LSB};
+                 counter <= counter + 1;
+            end
+            CORRECT: begin
+                quotient   <= dividend_Q;
+                remainder  <= accumulator;
+                data_ready <= 1'b1;
+            end
+	   endcase
+	end
+	  
 end
 
 // Accumulator ALU
 always @(*) begin
-
+    dividend_temp = 32'b0;
 	if (!counter && CS == CORRECT) begin
 		{accumulator,dividend_temp[XLEN-1:1],Q_LSB} = {accumulator_reg,dividend_Q[XLEN-1:1],dividend_Q[0]};
 		if (accumulator_reg[XLEN]) begin

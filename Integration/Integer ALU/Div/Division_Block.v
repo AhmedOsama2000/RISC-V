@@ -12,7 +12,7 @@ module Division_BLOCK #(
 	input  wire [1:0]         operation,
 
 	//outputs    
-	output wire               divided_by_zero,
+	output wire               div_by_zero,
 	output reg  [XLEN - 1:0]  product_o,
 	output wire               data_ready
 );
@@ -38,9 +38,6 @@ assign divisor_div        =  (is_sign_operation & sign_divisor)  ? ~divisor  + 1
 assign converation_enable =  is_sign_operation & ((sign_divisor & !sign_dividend) | (!sign_divisor & sign_dividend)) ? 1'b1 : 1'b0 ;
 	
 
-
-
-
 	Division_Unit #(.XLEN(XLEN),.COUNT_WIDTH(COUNT_WIDTH)) Division 
 	(
 
@@ -50,19 +47,20 @@ assign converation_enable =  is_sign_operation & ((sign_divisor & !sign_dividend
     .dividend(dividend_div),
     .divisor(divisor_div),
    	.data_valid(data_valid),
+   	.div_by_zero(div_by_zero),
 
 	//outputs    
 	.quotient(quotient_temp),
 	.remainder(remainder_temp),
-	.divided_by_zero(divided_by_zero),
 	.data_ready(data_ready)
 );
 
 //internal
  wire [XLEN - 1:0]   quotient, remainder;
 
-assign remainder = (converation_enable) ? ~remainder_temp + 1'b1 : remainder_temp ;
-assign quotient  = (converation_enable) ? ~quotient_temp + 1'b1 : quotient_temp ;
+assign div_by_zero = (divisor == 32'b0)? 1'b1:1'b0;
+assign remainder   = (converation_enable) ? ~remainder_temp + 1'b1 : remainder_temp ;
+assign quotient    = (converation_enable) ? ~quotient_temp  + 1'b1 : quotient_temp ;
 
 always @(*) begin
 	 case (operation)
