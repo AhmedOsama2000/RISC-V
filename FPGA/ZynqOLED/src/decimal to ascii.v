@@ -15,7 +15,7 @@ reg [1:0]        counter;
 wire                done;
 reg               flag;
 
-reg clock_10;
+reg clock_10;               // 10 MHZ
 reg [2:0] counter_clock ;
 
 
@@ -46,7 +46,6 @@ always @(posedge clock_10) begin
     
         if (reset)
           begin
-              //start <= 1'b0;
               ascii        <= {64{8'h02}};   // initial all 64 digits is spaces
               temp         <=      8'd02 ;
               decimal_temp <=      32'd0 ;
